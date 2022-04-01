@@ -9,7 +9,9 @@
 
     .logo {
         display: block;
-        padding: 8px 0;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
 
         img {
             display: block;
@@ -119,4 +121,10 @@
             }
         }
     }
+}
+
+.header {
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+    color: #ffd700;
 }

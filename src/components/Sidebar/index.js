@@ -3,16 +3,26 @@ import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 
-import LogoS from '../../assets/images/logo-s.png';
+import headerIcon from '../../assets/images/header_icon.svg';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import './index.scss';
 
 const Sidebar = () => {
     return (
+        <>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"></link>
         <div className="nav-bar">
         <Link className='logo' to='/'>
-            <img src={LogoS} alt="logo" />
-            <img className='sub-logo' src={LogoSubtitle} alt="slobodan" />
+        {/* <span className="material-icons-outlined">
+        &#xe4f3;
+</span>
+<br />
+            {/* <img src={headerIcon} alt="logo" /> 
+            <img className='sub-logo' src={LogoSubtitle} alt="slobodan" /> */}
+            <span className='header'>
+                VJ
+            </span>
         </Link>
 
         <nav>
@@ -41,6 +51,7 @@ const Sidebar = () => {
             </li>
         </ul>
         </div>
+        </>
     );
 }
 
