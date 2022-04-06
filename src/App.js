@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 
 import './App.scss';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />}></Route>
           <Route path='about' element={<About />}></Route>
+          <Route path='contact' element={<Contact />}></Route>
         </Route>
       </Routes>
   );

@@ -28,11 +28,11 @@ const About = () => {
                             letterClass={letterClass}
                         />
                     </h1>
-                    <p>I'm a versatile front-end developer. I enjoy building web apps using React, Angular, Node.js, Jasmine and other
-                        modern technologies.
+                    <p>Hi, my name is Vishal and I'm a web developer who's passionate about all things JavaScript.
+                        I live in Bangalore, and am currently working for Deloitte as a frontend developer.
+                        Some of the technologies I've used to build web apps are React, Angular, Redux, and Node.js.
                     </p>
-                    <p>I'm an ardent sports fan and enjoy watching football, F1, tennis and badminton.</p> 
-                    <p>Random fact #3</p>
+                    <p>When I'm not busy working, you can find me watching football, F1, tennis and badminton.</p>
                 </div>
 
                 <div className="stage-cube-cont">
@@ -58,7 +58,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            {/* <Loader type='pacman'/> */}
+            <Loader type='pacman'/>
         </>
     );
 }

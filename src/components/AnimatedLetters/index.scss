@@ -4,9 +4,11 @@
     animation: bounceIn 1s 1s;
     animation-fill-mode: forwards;
     min-width: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .text-animate-hover {
+    font-family: 'Roboto', sans-serif;
     min-width: 10px;
     display: inline-block;
     animation-fill-mode: both;

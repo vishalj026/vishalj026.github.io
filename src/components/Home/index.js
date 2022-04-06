@@ -7,7 +7,7 @@ import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const nameArray = 'Vishal Joshi'.split('');
+    const nameArray = 'Vishal Joshi,'.split('');
     const jobArray = 'a web developer.'.split('');
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const Home = () => {
                         <span className={`${letterClass} _12`}>i,</span>
                         <br />
                         <span className={`${letterClass} _13`}>I</span>
-                        <span className={`${letterClass} _14`}>'m</span>
+                        <span className={`${letterClass} _14`}>'m &nbsp;</span>
 
                         <AnimatedLetters letterClass={letterClass}
                             idx={15}
