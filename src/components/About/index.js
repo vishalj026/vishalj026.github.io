@@ -32,10 +32,10 @@ const About = () => {
                         I live in Bangalore, and am currently working for Deloitte as a frontend developer.
                         Some of the technologies I've used to build web apps are React, Angular, Redux, and Node.js.
                     </p>
-                    <p>When I'm not busy working, you can find me watching football, F1, tennis and badminton.</p>
+                    <p>When I'm not busy working, you can find me watching football and F1, and sometimes reading a book.</p>
                 </div>
 
-                <div className="stage-cube-cont">
+                {/* <div className="stage-cube-cont">
                     <div className="cubespinner">
                         <div className="face1">
                             <FontAwesomeIcon icon={faAngular} color="#DD0031"></FontAwesomeIcon>
@@ -54,6 +54,29 @@ const About = () => {
                         </div>
                         <div className="face6">
                             <FontAwesomeIcon icon={faGitAlt} color="#EC4D28"></FontAwesomeIcon>
+                        </div>
+                    </div>
+                </div> */}
+
+                <div className="scene">
+                    <div className="cube">
+                        <div className="cube__face--front">
+                            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"></FontAwesomeIcon>
+                        </div>
+                        <div className="cube__face--right">
+                            <FontAwesomeIcon icon={faHtml5} color="#F06529"></FontAwesomeIcon>
+                        </div>
+                        <div className="cube__face--back">
+                            <FontAwesomeIcon icon={faCss3} color="#28A4D9"></FontAwesomeIcon>
+                        </div>
+                        <div className="cube__face--left">
+                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28"></FontAwesomeIcon>
+                        </div>
+                        <div className="cube__face--top">
+                            <FontAwesomeIcon icon={faReact} color="#5ED4F4"></FontAwesomeIcon>
+                        </div>
+                        <div className="cube__face--bottom">
+                            <FontAwesomeIcon icon={faAngular} color="#DD0031"></FontAwesomeIcon>
                         </div>
                     </div>
                 </div>

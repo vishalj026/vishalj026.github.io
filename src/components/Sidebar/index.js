@@ -1,10 +1,8 @@
-import { faUser, faHome,faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faHome,faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 
-import headerIcon from '../../assets/images/header_icon.svg';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
 import './index.scss';
 
 const Sidebar = () => {
@@ -14,12 +12,6 @@ const Sidebar = () => {
       rel="stylesheet"></link>
         <div className="nav-bar">
         <Link className='logo' to='/'>
-        {/* <span className="material-icons-outlined">
-        &#xe4f3;
-</span>
-<br />
-            {/* <img src={headerIcon} alt="logo" /> 
-            <img className='sub-logo' src={LogoSubtitle} alt="slobodan" /> */}
             <span className='header'>
                 VJ
             </span>
@@ -39,6 +31,11 @@ const Sidebar = () => {
             </NavLink>
         </nav>
         <ul>
+            <li>
+                <a target="_blank" href="/resume/Vishal_Joshi_Resume_Sept_22.pdf" download="Vishal_Joshi_Resume.pdf">
+                    <FontAwesomeIcon icon={faDownload} color="#4d4d4e"></FontAwesomeIcon>
+                </a>
+            </li>
             <li>
                 <a target="_blank" rel="noopener noreferer" href="https://www.linkedin.com/in/vishal-joshi-207716106">
                     <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"></FontAwesomeIcon>

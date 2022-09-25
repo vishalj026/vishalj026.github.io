@@ -80,6 +80,7 @@
     margin-left: 0;
     position: absolute;
     right: 0;
+    perspective: 400px;
     overflow: hidden;
     .cubespinner {
         animation-name: spin-cube;
@@ -144,4 +145,76 @@
             transform: rotateX(90deg);
         }
     }
+}
+
+.scene {
+    width: 150px;
+    height: 150px;
+    // border: 1px solid #CCC;
+    margin: 80px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    perspective: 600px;
+
+    .cube {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: translateZ(-100px);
+        transition: transform 1s;
+
+        animation-name: spin-cube;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 12s;
+        transform-origin: 100px 100px 0;
+        margin-left: calc(50% - 100px);
+
+        div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.4);
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px 0 lightyellow;
+        }
+    }
+
+
+    .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
+    .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
+    .cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
+    .cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
+    .cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
+    .cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+    @keyframes spin {
+        from,
+        to {
+            transform: translateZ(-100px) rotateY( -90deg);
+            
+        }
+        16%{
+            transform: translateZ(-100px) rotateY(0deg);
+        }
+        33%{
+            transform: translateZ(-100px) rotateY(-180deg);
+        }
+        50%{
+            transform: translateZ(-100px) rotateY(  90deg);
+        }
+        66%{
+            transform: translateZ(-100px) rotateX( -90deg); 
+        }
+        83%{
+            transform: translateZ(-100px) rotateX(  90deg);
+        }
+    }
+
 }
